@@ -1,0 +1,18 @@
+#include QMK_KEYBOARD_H
+
+
+#define _LAYER0 0
+#define _LAYER1 1
+
+enum custom_keycodes {
+    LAYER0 = SAFE_RANGE,
+    LAYER1,
+};
+
+ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
+
+ [_LAYER0] = LAYOUT(KC_VOLD, KC_VOLU, KC_COPY, KC_PSTE, TG(1)),
+
+[_LAYER1] = LAYOUT(KC_Z, KC_X, KC_C, KC_V, KC_TRNS) 
+
+};
